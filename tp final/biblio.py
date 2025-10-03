@@ -58,10 +58,7 @@ class Bibliotheque:
                 print(" -", livre)
 
     def sauvegarder_json(self, fichier):
-
             data = [livre.to_dict() for livre in self.livres]
             with open(fichier, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=4, ensure_ascii=False)
             print(f"Catalogue sauvegardé dans '{fichier}'.")
-  
-
