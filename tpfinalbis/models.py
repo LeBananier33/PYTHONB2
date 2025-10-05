@@ -1,6 +1,3 @@
-import json
-import csv
-
 class Livre:
     def __init__(self, titre, auteur, isbn):
         self.titre = titre
@@ -19,7 +16,9 @@ class Livre:
         }
 
     def from_dict(self, data):
+        """Crée un objet Livre à partir d’un dictionnaire."""
         return Livre(data["titre"], data["auteur"], data["isbn"])
+
 
 class LivreNumerique(Livre):
     def __init__(self, titre, auteur, isbn, taille_fichier):
@@ -36,7 +35,9 @@ class LivreNumerique(Livre):
         return d
 
     def from_dict(self, data):
+        """Crée un objet LivreNumerique à partir d’un dictionnaire."""
         return LivreNumerique(data["titre"], data["auteur"], data["isbn"], data["taille_fichier"])
+
 
 class Bibliotheque:
     def __init__(self, nom):
@@ -53,6 +54,6 @@ class Bibliotheque:
         if not self.livres:
             print("La bibliothèque est vide.")
         else:
-            print(f"Catalogue de {self.nom}:")
+            print(f"\nCatalogue de {self.nom}:")
             for livre in self.livres:
                 print(" -", livre)
