@@ -1,8 +1,8 @@
 # file_manager.py
 import json
 import csv
-from models import Bibliotheque, Livre, LivreNumerique
-from exeptions import ErreurBibliotheque
+from src.models import Bibliotheque, Livre, LivreNumerique
+from src.exeptions import ErreurBibliotheque
 
 class BibliothequeAvecFichier(Bibliotheque):
     def sauvegarder_json(self, fichier):

@@ -1,6 +1,6 @@
-from models import Livre, LivreNumerique
-from file_manager import BibliothequeAvecFichier
-from exeptions import ErreurBibliotheque
+from src.models import Livre, LivreNumerique
+from src.file_manager import BibliothequeAvecFichier
+from src.exeptions import ErreurBibliotheque
 
 if __name__ == "__main__":
     biblio = BibliothequeAvecFichier("Médiathèque Centrale")
