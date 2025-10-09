@@ -1,0 +1,15 @@
+[
+    {
+        "type": "Livre",
+        "titre": "1984",
+        "auteur": "George Orwell",
+        "isbn": "9780451524935"
+    },
+    {
+        "type": "LivreNumerique",
+        "titre": "Python 101",
+        "auteur": "Michael Driscoll",
+        "isbn": "9781492339249",
+        "taille_fichier": 5
+    }
+]
